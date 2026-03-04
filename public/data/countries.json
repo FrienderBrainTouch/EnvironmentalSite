@@ -1,0 +1,10 @@
+[
+  { "id": "france", "name": "프랑스", "city": "파리", "coverColor": "#A8C8E8", "flagCode": "fr" },
+  { "id": "italy", "name": "이탈리아", "city": "로마", "coverColor": "#90D4A0", "flagCode": "it" },
+  { "id": "switzerland", "name": "스위스", "city": "베른", "coverColor": "#F0B0B0", "flagCode": "ch" },
+  { "id": "spain", "name": "스페인", "city": "마드리드", "coverColor": "#F0A8A8", "flagCode": "es" },
+  { "id": "greece", "name": "그리스", "city": "아테네", "coverColor": "#90B8E0", "flagCode": "gr" },
+  { "id": "uk", "name": "영국", "city": "런던", "coverColor": "#7BA3D4", "flagCode": "gb" },
+  { "id": "dokdo", "name": "한국", "city": "독도", "coverColor": "#90B0E0", "flagCode": "kr" },
+  { "id": "seoul", "name": "한국", "city": "서울", "coverColor": "#F0A8A8", "flagCode": "kr" }
+]

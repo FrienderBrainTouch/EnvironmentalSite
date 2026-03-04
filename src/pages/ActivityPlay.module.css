@@ -1,0 +1,303 @@
+.wrapper {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: var(--space-md) var(--space-lg) var(--space-xl);
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: min(720px, 92vw);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.backBtn {
+  font-size: var(--text-lg);
+  color: var(--color-text-soft);
+  background: var(--color-surface);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 12px var(--color-shadow);
+  flex-shrink: 0;
+}
+
+.backBtn:hover {
+  background: #f8f9fa;
+  color: var(--color-text);
+}
+
+.countryName {
+  font-size: var(--text-base);
+  color: var(--color-text-soft);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.progress {
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+  margin-left: auto;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: min(320px, 50vh);
+}
+
+.questionArea {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: clamp(40px, 10vw, 64px);
+}
+
+.question {
+  font-size: var(--text-2xl);
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0 var(--space-sm);
+  word-break: keep-all;
+}
+
+.optionList {
+  width: 100%;
+  max-width: min(400px, 92vw);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.optionButton {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--text-xl);
+  text-align: left;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 16px var(--color-shadow);
+  border: 2px solid transparent;
+}
+
+.optionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-secondary);
+}
+
+.flagOptionList {
+  width: 100%;
+  max-width: min(400px, 92vw);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.flagOptionButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 16px var(--color-shadow);
+  border: 2px solid transparent;
+  min-width: 100px;
+}
+
+.flagOptionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-secondary);
+}
+
+.flagOptionImg {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.flagOptionLabel {
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+.oxSplit {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  margin-top: var(--space-md);
+}
+
+.oxHalf {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s, filter 0.15s;
+  min-height: 160px;
+}
+
+.oxHalf:hover {
+  transform: scale(1.02);
+  filter: brightness(1.05);
+}
+
+.oxHalf[data-side="o"] {
+  background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+  border-radius: 24px 0 0 24px;
+  margin-right: 4px;
+}
+
+.oxHalf[data-side="x"] {
+  background: linear-gradient(135deg, #ef5350 0%, #e53935 100%);
+  border-radius: 0 24px 24px 0;
+  margin-left: 4px;
+}
+
+.oxLetter {
+  font-size: clamp(3rem, 12vw, 5rem);
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.resultArea {
+  width: 100%;
+  max-width: min(560px, 96vw);
+  text-align: center;
+}
+
+.resultBadge {
+  font-size: var(--text-base);
+  font-weight: 600;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.01em;
+}
+
+.resultBadge[data-correct="true"] {
+  background: rgba(232, 245, 233, 0.9);
+  color: #2e7d32;
+}
+
+.resultBadge[data-correct="false"] {
+  background: rgba(255, 235, 238, 0.9);
+  color: #c62828;
+}
+
+.answerLine {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin: 0 0 var(--space-md) 0;
+  flex-wrap: wrap;
+}
+
+.answerLabel {
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+  font-weight: 600;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.answerText {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+.explanation {
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0 0 var(--space-lg) 0;
+  padding: var(--space-md);
+  background: #f5f5f5;
+  border-radius: var(--radius-md);
+  text-align: left;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  width: 100%;
+  max-width: 100%;
+}
+
+.resultButtons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.nextButton {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--text-lg);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  border-radius: var(--radius-md);
+}
+
+.nextButton:hover {
+  transform: translateY(-2px);
+}
+
+.backToContentBtn {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--text-base);
+  background: var(--color-surface);
+  color: var(--color-text-soft);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.backToContentBtn:hover {
+  background: #f5f5f5;
+  color: var(--color-text);
+}
+
+.finished {
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  margin: 0;
+  font-weight: bold;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: var(--space-xl);
+  margin: 0;
+}
+
+.error {
+  color: var(--color-wrong);
+}
