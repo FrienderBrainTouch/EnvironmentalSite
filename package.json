@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
-    "download-flags": "node scripts/download-flags.cjs"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",

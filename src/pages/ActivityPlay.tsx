@@ -2,10 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import type { Country } from '../types/data';
 import type { CountryQuestions, ActivityType, ChoiceQuestion, OxItem } from '../types/data';
-import { getFlagUrl, getFlagCdnUrl, NAME_TO_FLAG_CODE } from '../utils/flagUrl';
 import styles from './ActivityPlay.module.css';
-
-const SINGLE_ACTIVITIES: ActivityType[] = ['flag_find', 'culture_find'];
 
 function toDataKey(type: ActivityType): keyof CountryQuestions {
   const map: Record<ActivityType, keyof CountryQuestions> = {
@@ -72,20 +69,7 @@ export default function ActivityPlay() {
     );
   }
 
-  const isSingle = SINGLE_ACTIVITIES.includes(activityType);
-  if (isSingle) {
-    const q = questions[toDataKey(activityType)] as ChoiceQuestion;
-    return (
-      <SingleChoicePlay
-        country={country}
-        question={q}
-        onBack={handleBack}
-        showAsFlags={activityType === 'flag_find'}
-      />
-    );
-  }
-
-  if (activityType === 'food_find' || activityType === 'landmark_find') {
+  if (activityType === 'flag_find' || activityType === 'food_find' || activityType === 'culture_find' || activityType === 'landmark_find') {
     const list = questions[toDataKey(activityType)] as ChoiceQuestion[];
     return (
       <MultiChoicePlay
@@ -113,104 +97,6 @@ export default function ActivityPlay() {
       <button type="button" className={styles.backBtn} onClick={handleBack}>
         뒤로
       </button>
-    </div>
-  );
-}
-
-function SingleChoicePlay({
-  country,
-  question,
-  onBack,
-  showAsFlags = false,
-}: {
-  country: Country;
-  question: ChoiceQuestion;
-  onBack: () => void;
-  showAsFlags?: boolean;
-}) {
-  const [selected, setSelected] = useState<string | null>(null);
-  const [showResult, setShowResult] = useState(false);
-  const isCorrect = selected === question.correctAnswer;
-
-  function handleSelect(opt: string) {
-    if (showResult) return;
-    setSelected(opt);
-    setShowResult(true);
-  }
-
-  return (
-    <div className={styles.wrapper}>
-      <header className={styles.header}>
-        <button type="button" className={styles.backBtn} onClick={onBack} aria-label="뒤로">
-          뒤로
-        </button>
-        <span className={styles.countryName}>{country.name}</span>
-      </header>
-      <main className={styles.main}>
-        <div className={styles.questionArea}>
-          <p className={styles.question}>
-            {question.question ?? '정답을 골라보세요'}
-          </p>
-        </div>
-        {!showResult ? (
-          showAsFlags ? (
-            <div className={styles.flagOptionList}>
-              {question.options.map((opt) => {
-                const code = NAME_TO_FLAG_CODE[opt];
-                return (
-                  <button
-                    key={opt}
-                    type="button"
-                    className={styles.flagOptionButton}
-                    onClick={() => handleSelect(opt)}
-                  >
-                    {code ? (
-                      <img
-                        src={getFlagUrl(code, 160)}
-                        alt=""
-                        className={styles.flagOptionImg}
-                        onError={(e) => {
-                          const el = e.currentTarget;
-                          if (el) el.src = getFlagCdnUrl(code, 160);
-                        }}
-                      />
-                    ) : null}
-                    <span className={styles.flagOptionLabel}>{opt}</span>
-                  </button>
-                );
-              })}
-            </div>
-          ) : (
-          <div className={styles.optionList}>
-            {question.options.map((opt) => (
-              <button
-                key={opt}
-                type="button"
-                className={styles.optionButton}
-                onClick={() => handleSelect(opt)}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-          ) ) : (
-          <div className={styles.resultArea}>
-            <div className={styles.resultBadge} data-correct={isCorrect}>
-              {isCorrect ? '정답이에요!' : '다시 생각해 보세요'}
-            </div>
-            <p className={styles.answerLine}>
-              <span className={styles.answerLabel}>정답</span>
-              <span className={styles.answerText}>{question.correctAnswer}</span>
-            </p>
-            {question.explanation ? (
-              <p className={styles.explanation}>{question.explanation}</p>
-            ) : null}
-            <button type="button" className={styles.backToContentBtn} onClick={onBack}>
-              활동 끝내기
-            </button>
-          </div>
-        )}
-      </main>
     </div>
   );
 }

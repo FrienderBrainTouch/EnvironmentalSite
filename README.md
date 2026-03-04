@@ -1,6 +1,7 @@
-# Environmental Site (환경/세계 학습 사이트)
+# Environmental Site (환경과학 VR 학습 사이트)
 
-나라별 국기·음식·문화·랜드마크를 배우고 OX 퀴즈를 풀 수 있는 웹 학습 사이트입니다.
+기후변화, 에너지, 분리배출, 해양오염 등 환경 문제를 VR 체험형 활동처럼 학습하고  
+클릭형 4지선다·OX 퀴즈로 개념과 실천 방법을 익히는 웹 학습 사이트입니다.
 
 ## 기술 스택
 
@@ -43,40 +44,39 @@ npm run download-flags
 
 ```
 ├── public/
-│   ├── data/
-│   │   ├── countries.json    # 국가 목록 (id, name, city, coverColor, flagCode)
-│   │   └── questions/        # 국가별 퀴즈 (국기·음식·문화·랜드마크·OX)
-│   └── flags/               # 국기 이미지 (ISO 코드별)
+│   └── data/
+│       ├── countries.json    # 환경과학 VR 콘텐츠 목록 (id, name, city, coverColor)
+│       └── questions/        # VR 콘텐츠별 퀴즈 (활동1~4 4지선다, 활동5 OX)
 ├── src/
 │   ├── context/              # 인증 등 전역 상태
 │   ├── pages/
 │   │   ├── Login.tsx         # 로그인
-│   │   ├── CountryList.tsx   # 국가 목록
-│   │   ├── CountryActivityList.tsx  # 국가별 활동 선택
-│   │   └── ActivityPlay.tsx  # 활동 플레이 (퀴즈·OX)
+│   │   ├── CountryList.tsx   # 환경과학 VR 콘텐츠 목록
+│   │   ├── CountryActivityList.tsx  # 콘텐츠별 활동 선택
+│   │   └── ActivityPlay.tsx  # 활동 플레이 (4지선다·OX)
 │   ├── types/                # TypeScript 타입
 │   ├── utils/                # 유틸 (국기 URL 등)
 │   └── App.tsx
-├── scripts/                  # download-flags 등
 ├── package.json
 └── vite.config.ts
 ```
 
-## 활동 종류
+## 활동 종류 (환경과학 VR 기준)
 
 | 활동 | 설명 |
 |------|------|
-| 국기 찾기 | 해당 국가 국기 고르기 |
-| 음식 찾기 | 10문제, 국가 대표 음식 고르기 |
-| 대표 문화 | 해당 국가 문화 선택 |
-| 랜드마크 찾기 | 10문제, 랜드마크·명소 고르기 |
-| OX 퀴즈 | 10문제, O/X로 정답 고르기 (설명 포함) |
+| 활동 1 | 환경 개념·상황 이해 4지선다 (10문제 이상) |
+| 활동 2 | 생활 속 실천·비실천 구분 4지선다 (10문제 이상) |
+| 활동 3 | 잘못된 사례 찾기·좋은 습관 찾기 4지선다 (10문제 이상) |
+| 활동 4 | 미션·분류·설계형 문제 4지선다 (10문제 이상) |
+| 활동 5 (OX) | 환경 OX 퀴즈 (10문제 이상) |
 
 ## 데이터 형식
 
-- **countries.json**: `id`, `name`, `city`, `coverColor`, `flagCode`
-- **questions/{countryId}.json**: `flagFind`, `foodFind`, `cultureFind`, `landmarkFind`, `oxQuiz`  
-  - 각 항목은 `question`, `correctAnswer`, `options`(선택지), `explanation`(설명, 선택) 등
+- **countries.json**: `id`, `name`, `city`, `coverColor` (환경과학 VR 콘텐츠 메타 정보)
+- **questions/{contentId}.json**: `flagFind`, `foodFind`, `cultureFind`, `landmarkFind`, `oxQuiz`  
+  - `flagFind`, `foodFind`, `cultureFind`, `landmarkFind`: 4지선다 문제 배열 (각 10문제 이상 권장)
+  - `oxQuiz`: OX 문제 배열 (10문제 이상 권장)
 
 ## 라이선스
 

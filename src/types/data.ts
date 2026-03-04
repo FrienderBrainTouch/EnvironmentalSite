@@ -3,8 +3,6 @@ export interface Country {
   name: string;
   city: string;
   coverColor: string;
-  /** ISO 3166-1 alpha-2 (e.g. fr, kr). Used for flag image. */
-  flagCode?: string;
 }
 
 export interface ChoiceQuestion {
@@ -23,9 +21,9 @@ export interface OxItem {
 }
 
 export interface CountryQuestions {
-  flagFind: ChoiceQuestion;
+  flagFind: ChoiceQuestion[];
   foodFind: ChoiceQuestion[];
-  cultureFind: ChoiceQuestion;
+  cultureFind: ChoiceQuestion[];
   landmarkFind: ChoiceQuestion[];
   oxQuiz: OxItem[];
 }
@@ -38,9 +36,9 @@ export type ActivityType =
   | 'ox_quiz';
 
 export const ACTIVITY_LIST: { type: ActivityType; label: string; subLabel: string }[] = [
-  { type: 'flag_find', label: '국기 찾기', subLabel: '국기를 찾아보세요' },
-  { type: 'food_find', label: '음식 찾기', subLabel: '10문제' },
-  { type: 'culture_find', label: '대표 문화', subLabel: '문화를 알아봐요' },
-  { type: 'landmark_find', label: '랜드마크 찾기', subLabel: '10문제' },
-  { type: 'ox_quiz', label: 'OX 퀴즈', subLabel: '10문제, 다양한 유형' },
+  { type: 'flag_find', label: '활동 1', subLabel: '클릭형 4지선다' },
+  { type: 'food_find', label: '활동 2', subLabel: '클릭형 4지선다' },
+  { type: 'culture_find', label: '활동 3', subLabel: '클릭형 4지선다' },
+  { type: 'landmark_find', label: '활동 4', subLabel: '클릭형 4지선다' },
+  { type: 'ox_quiz', label: '활동 5 (OX)', subLabel: 'OX 퀴즈' },
 ];
