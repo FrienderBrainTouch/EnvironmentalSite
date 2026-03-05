@@ -1,9 +1,8 @@
 [
-  { "id": "recycle", "name": "똑똑한 재활용", "city": "자원순환·분리배출 체험 VR", "coverColor": "#A8C8E8" },
-  { "id": "energy_trip", "name": "에너지가 집에 오기까지 여행", "city": "전기 여행·절약 체험 VR", "coverColor": "#90D4A0" },
   { "id": "carbon_neutral", "name": "탄소를 줄이는 탄소중립 생활", "city": "탄소중립 생활 실천 VR", "coverColor": "#F0B0B0" },
   { "id": "green_village", "name": "친환경 에너지 발전소", "city": "재생에너지 이해 VR", "coverColor": "#F0A8A8" },
-  { "id": "climate_action", "name": "기후변화와 환경 문제", "city": "기후변화 원인·대응 VR", "coverColor": "#90B8E0" },
-  { "id": "ocean_rescue", "name": "바다를 지키는 해양환경", "city": "해양오염·정화 체험 VR", "coverColor": "#7BA3D4" }
+  { "id": "energy_trip", "name": "에너지가 집에 오기까지 여행", "city": "전기 여행·절약 체험 VR", "coverColor": "#90D4A0" },
+  { "id": "recycle", "name": "똑똑한 재활용", "city": "자원순환·분리배출 체험 VR", "coverColor": "#A8C8E8" },
+  { "id": "ocean_rescue", "name": "바다를 지키는 해양환경", "city": "해양오염·정화 체험 VR", "coverColor": "#7BA3D4" },
+  { "id": "climate_action", "name": "기후변화와 환경 문제", "city": "기후변화 원인·대응 VR", "coverColor": "#90B8E0" }
 ]
-
