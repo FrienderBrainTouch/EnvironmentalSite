@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import type { Country } from '../types/data';
 import type { CountryQuestions, ActivityType, ChoiceQuestion, OxItem, DragBucketRound, OrderRound, MatchRound } from '../types/data';
+import { randomizeQuestions } from '../utils/shuffle';
 import { getInteractionConfig } from '../config';
 import type {
   ActivityInteractionConfig,
@@ -45,7 +46,7 @@ export default function ActivityPlay() {
       .then(([countries, q]: [Country[], CountryQuestions]) => {
         const c = countries.find((x: Country) => x.id === countryId);
         setCountry(c ?? null);
-        setQuestions(q);
+        setQuestions(randomizeQuestions(q));
         setError('');
       })
       .catch(() => {
