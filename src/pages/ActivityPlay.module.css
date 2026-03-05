@@ -7,6 +7,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
@@ -20,6 +21,8 @@
   align-items: center;
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
+  flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
 .backBtn {
@@ -57,21 +60,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: min(320px, 50vh);
+  justify-content: flex-start;
+  min-height: 0;
+  width: 100%;
+  overflow-y: auto;
+  padding-bottom: var(--space-xl);
 }
 
 .questionArea {
   width: 100%;
   max-width: 100%;
   text-align: center;
-  margin-bottom: clamp(40px, 10vw, 64px);
+  margin-bottom: var(--space-lg);
+  flex-shrink: 0;
 }
 
 .question {
-  font-size: var(--text-2xl);
-  line-height: 1.6;
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+  line-height: 1.5;
   color: var(--color-text);
+}
+
+.roundIndicator {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted, #666);
+  margin-top: var(--space-xs);
   margin: 0;
   padding: 0 var(--space-sm);
   word-break: keep-all;
@@ -83,17 +96,20 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+  flex-shrink: 0;
 }
 
 .optionButton {
   padding: var(--space-md) var(--space-lg);
-  font-size: var(--text-xl);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   text-align: left;
   background: var(--color-surface);
   color: var(--color-text);
   border-radius: var(--radius-md);
   box-shadow: 0 4px 16px var(--color-shadow);
   border: 2px solid transparent;
+  flex-shrink: 0;
+  min-height: 48px;
 }
 
 .optionButton:hover {
@@ -102,22 +118,65 @@
   border-color: var(--color-secondary);
 }
 
+/* 순서 맞추기 */
+.orderList {
+  width: 100%;
+  max-width: min(420px, 92vw);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex-shrink: 0;
+}
+
+.orderItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: 0 4px 12px var(--color-shadow);
+  cursor: grab;
+  flex-shrink: 0;
+  min-height: 48px;
+}
+
+.orderItem:active {
+  cursor: grabbing;
+}
+
+.orderIndex {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-sm);
+}
+
 .oxSplit {
   display: flex;
   width: 100%;
-  min-height: 200px;
+  max-width: min(480px, 92vw);
+  min-height: 160px;
   margin-top: var(--space-md);
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .oxHalf {
   flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   cursor: pointer;
   transition: transform 0.15s, filter 0.15s;
-  min-height: 160px;
+  min-height: 140px;
 }
 
 .oxHalf:hover {
@@ -127,14 +186,12 @@
 
 .oxHalf[data-side="o"] {
   background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
-  border-radius: 24px 0 0 24px;
-  margin-right: 4px;
+  border-radius: 20px 0 0 20px;
 }
 
 .oxHalf[data-side="x"] {
   background: linear-gradient(135deg, #ef5350 0%, #e53935 100%);
-  border-radius: 0 24px 24px 0;
-  margin-left: 4px;
+  border-radius: 0 20px 20px 0;
 }
 
 .oxLetter {
@@ -148,6 +205,61 @@
   width: 100%;
   max-width: min(560px, 96vw);
   text-align: center;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* 드래그 등 결과만 보여 줄 때: 상단 border 제거, 화면 가운데 느낌 */
+.resultAreaFullScreen {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  flex: 1;
+  justify-content: center;
+}
+
+.correctText {
+  margin-top: var(--space-md);
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.incorrectText {
+  margin-top: var(--space-md);
+  color: #c62828;
+  font-weight: 600;
+}
+
+.resultExplanation {
+  margin-top: var(--space-sm);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.resultHint {
+  margin-top: var(--space-md);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-text-soft);
+}
+
+.explanationList {
+  width: 100%;
+  text-align: left;
+  margin-top: var(--space-sm);
+}
+
+.explanationPair {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-right: 0.25em;
 }
 
 .resultBadge {
@@ -171,7 +283,7 @@
 
 .answerLine {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   gap: var(--space-sm);
   margin: 0 0 var(--space-md) 0;
@@ -199,7 +311,7 @@
   font-size: var(--text-base);
   line-height: 1.6;
   color: var(--color-text);
-  margin: 0 0 var(--space-lg) 0;
+  margin: var(--space-md) 0 var(--space-lg) 0;
   padding: var(--space-md);
   background: #f5f5f5;
   border-radius: var(--radius-md);
@@ -211,11 +323,95 @@
   max-width: 100%;
 }
 
+.explanation[data-correct="true"] {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.explanation[data-wrong="true"] {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* 절약 팁 별도 블록 (에너지 사용 상황 맞추기 등) */
+.savingTipBlock {
+  width: 100%;
+  max-width: 100%;
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  background: #e8f5e9;
+  border-radius: var(--radius-md);
+  border-left: 4px solid #2e7d32;
+  text-align: left;
+}
+
+.savingTipLabel {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: var(--space-xs);
+}
+
+.savingTipText {
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: #1b5e20;
+  margin: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* 드래그 결과 화면: 정답/틀림/미배치 항목 구역 */
+.resultSummary {
+  width: 100%;
+  text-align: left;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.resultSummaryTitle {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-soft);
+  margin: 0 0 var(--space-xs) 0;
+}
+
+.resultSummaryItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.resultSummaryItem {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+.resultSummaryItemCorrect {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.resultSummaryItemWrong {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.resultSummaryItemUnplaced {
+  background: #fff3e0;
+  color: #e65100;
+}
+
 .resultButtons {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
   align-items: center;
+  margin-top: var(--space-md);
 }
 
 .nextButton {
@@ -224,10 +420,241 @@
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: white;
   border-radius: var(--radius-md);
+  flex-shrink: 0;
+  min-height: 48px;
 }
 
 .nextButton:hover {
   transform: translateY(-2px);
+}
+
+/* 매칭(연결하기) - 카드 사이 공간, 점 표시, 점끼리 연결 */
+.matchGrid {
+  display: grid;
+  grid-template-columns: 1fr minmax(80px, 120px) 1fr;
+  gap: 0;
+  width: 100%;
+  max-width: min(640px, 92vw);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.matchColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  min-width: 0;
+}
+
+.matchCardWrap,
+.matchCardWrapRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-height: 52px;
+}
+
+.matchCardWrap {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.matchCardWrapRight {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.matchItem {
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: 0 2px 8px var(--color-shadow);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-align: center;
+  flex-shrink: 0;
+  min-height: 48px;
+  word-break: keep-all;
+  flex: 1;
+  max-width: 100%;
+}
+
+.matchCardWrap .matchItem {
+  flex: 1;
+  min-width: 0;
+}
+
+.matchDot {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  padding: 5px;
+  margin: 0;
+  border-radius: 50%;
+  background: var(--color-primary);
+  background-clip: content-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.matchCardWrap[data-selected="true"] .matchDot,
+.matchItem[data-selected="true"] ~ .matchDot,
+.matchCardWrapRight[data-selected="true"] .matchDot {
+  background: var(--color-primary);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color-primary);
+}
+
+.matchConnector {
+  min-width: 80px;
+}
+
+.matchLinesLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.matchLinesLayer + .matchColumn,
+.matchConnector + .matchColumn {
+  position: relative;
+  z-index: 1;
+}
+
+.matchConnectorSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.matchLine {
+  stroke: var(--color-primary);
+  stroke-width: 2px;
+  stroke-opacity: 0.8;
+  fill: none;
+}
+
+.matchLineCorrect {
+  stroke: #2e7d32;
+  stroke-width: 2.5px;
+  stroke-opacity: 1;
+  fill: none;
+}
+
+.matchLineWrong {
+  stroke: #c62828;
+  stroke-width: 2.5px;
+  stroke-opacity: 1;
+  fill: none;
+}
+
+.matchItem[data-selected="true"] {
+  outline: 2px solid var(--color-primary);
+}
+
+.matchItem[data-correct="true"] {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.matchItem[data-wrong="true"] {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* 드래그하여 통에 넣기 */
+.dragLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-lg);
+  width: 100%;
+  max-width: min(640px, 92vw);
+  align-items: start;
+  flex-shrink: 0;
+}
+
+.dragItemColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+.dragItem {
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: 0 2px 8px var(--color-shadow);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-align: center;
+  cursor: grab;
+  flex-shrink: 0;
+  min-height: 44px;
+  word-break: keep-all;
+}
+
+.dragItem[data-placed="true"] {
+  opacity: 0.6;
+}
+
+.dragItem[data-correct="true"] {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.dragItem[data-wrong="true"] {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.bucketColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.bucketWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.bucketDropZone {
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  background: #f1f8e9;
+  border: 2px dashed #aed581;
+  text-align: center;
+  min-height: 64px;
+}
+
+.bucketLabel {
+  font-weight: 600;
+  color: #558b2f;
+}
+
+.bucketItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.bucketItemBadge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  font-size: var(--text-xs);
+  box-shadow: 0 1px 4px var(--color-shadow);
+}
+
+.bucketItemBadge[data-correct="true"] {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.bucketItemBadge[data-wrong="true"] {
+  background: #ffebee;
+  color: #c62828;
 }
 
 .backToContentBtn {
@@ -237,6 +664,8 @@
   color: var(--color-text-soft);
   border-radius: var(--radius-md);
   box-shadow: 0 2px 8px var(--color-shadow);
+  flex-shrink: 0;
+  min-height: 44px;
 }
 
 .backToContentBtn:hover {

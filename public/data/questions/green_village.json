@@ -1,15 +1,15 @@
 {
   "flagFind": [
-    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["태양광", "석탄", "석유", "디젤"], "correctAnswer": "태양광" },
-    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["풍력", "석유", "석탄", "가스"], "correctAnswer": "풍력" },
-    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["수력", "석탄", "석유", "휘발유"], "correctAnswer": "수력" },
-    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["태양광과 풍력", "석탄과 석유", "석유와 가스", "휘발유와 경유"], "correctAnswer": "태양광과 풍력" },
-    { "question": "다음 중 태양광 에너지를 가장 잘 설명한 것은?", "options": ["햇빛으로 만드는 에너지", "바람으로 만드는 에너지", "물로 만드는 에너지", "석탄을 태워 만드는 에너지"], "correctAnswer": "햇빛으로 만드는 에너지" },
-    { "question": "다음 중 풍력 에너지는 어떻게 만드나요?", "options": ["바람으로", "햇빛으로", "석탄으로", "가스로"], "correctAnswer": "바람으로" },
-    { "question": "다음 중 수력 에너지는 무엇으로 만드나요?", "options": ["흐르는 물", "바람", "햇빛", "석탄"], "correctAnswer": "흐르는 물" },
-    { "question": "다음 중 친환경 에너지가 아닌 것은?", "options": ["석탄", "태양광", "풍력", "수력"], "correctAnswer": "석탄" },
-    { "question": "다음 중 친환경 에너지가 아닌 것은?", "options": ["석유", "태양광", "풍력", "수력"], "correctAnswer": "석유" },
-    { "question": "다음 중 우리 마을에 설치하면 좋은 친환경 에너지는?", "options": ["태양광 패널", "석탄 발전기", "석유 발전기", "디젤 발전기"], "correctAnswer": "태양광 패널" }
+    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["태양광", "석탄", "석유", "디젤"], "correctAnswer": "태양광", "explanation": "태양광은 햇빛으로 전기를 만들어 연기를 내지 않아 친환경 에너지예요." },
+    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["풍력", "석유", "석탄", "가스"], "correctAnswer": "풍력", "explanation": "풍력은 바람으로 전기를 만들어 공기를 오염시키지 않아요." },
+    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["수력", "석탄", "석유", "휘발유"], "correctAnswer": "수력", "explanation": "수력은 흐르는 물로 전기를 만들어 재생 가능한 친환경 에너지예요." },
+    { "question": "다음 중 친환경 에너지는 무엇일까요?", "options": ["태양광과 풍력", "석탄과 석유", "석유와 가스", "휘발유와 경유"], "correctAnswer": "태양광과 풍력", "explanation": "태양광과 풍력은 모두 재생에너지로, 탄소를 적게 내는 친환경 에너지예요." },
+    { "question": "다음 중 태양광 에너지를 가장 잘 설명한 것은?", "options": ["햇빛으로 만드는 에너지", "바람으로 만드는 에너지", "물로 만드는 에너지", "석탄을 태워 만드는 에너지"], "correctAnswer": "햇빛으로 만드는 에너지", "explanation": "태양광 에너지는 태양광 패널이 햇빛을 받아 전기로 바꾼 것이에요." },
+    { "question": "다음 중 풍력 에너지는 어떻게 만드나요?", "options": ["바람으로", "햇빛으로", "석탄으로", "가스로"], "correctAnswer": "바람으로", "explanation": "풍력 발전기는 바람에 날개가 돌아가면서 전기를 만들어요." },
+    { "question": "다음 중 수력 에너지는 무엇으로 만드나요?", "options": ["흐르는 물", "바람", "햇빛", "석탄"], "correctAnswer": "흐르는 물", "explanation": "수력 발전은 강이나 댐의 흐르는 물로 터빈을 돌려 전기를 만들어요." },
+    { "question": "다음 중 친환경 에너지가 아닌 것은?", "options": ["석탄", "태양광", "풍력", "수력"], "correctAnswer": "석탄", "explanation": "석탄은 화석연료를 태울 때 탄소와 오염 물질이 나와 친환경이 아니에요." },
+    { "question": "다음 중 친환경 에너지가 아닌 것은?", "options": ["석유", "태양광", "풍력", "수력"], "correctAnswer": "석유", "explanation": "석유는 화석연료로, 연소 시 이산화탄소가 나와 지구를 더웁게 해요." },
+    { "question": "다음 중 우리 마을에 설치하면 좋은 친환경 에너지는?", "options": ["태양광 패널", "석탄 발전기", "석유 발전기", "디젤 발전기"], "correctAnswer": "태양광 패널", "explanation": "지붕이나 빈 땅에 태양광 패널을 두면 햇빛으로 전기를 만들어 쓸 수 있어요." }
   ],
   "foodFind": [
     { "question": "다음 중 화석연료 에너지는 무엇일까요?", "options": ["석탄", "태양광", "풍력", "수력"], "correctAnswer": "석탄" },
@@ -48,16 +48,103 @@
     { "question": "친환경 에너지 자립마을이 되면 좋은 점은?", "options": ["깨끗한 공기와 건강한 생활", "연기가 많아짐", "소음이 늘어남", "쓰레기가 많아짐"], "correctAnswer": "깨끗한 공기와 건강한 생활" }
   ],
   "oxQuiz": [
-    { "question": "태양광과 풍력은 친환경 에너지이다", "correctAnswer": "O" },
-    { "question": "석탄과 석유는 화석연료이다", "correctAnswer": "O" },
-    { "question": "재생에너지는 다시 만들 수 있는 에너지이다", "correctAnswer": "O" },
-    { "question": "친환경 에너지를 쓰면 공기가 더 더러워진다", "correctAnswer": "X" },
-    { "question": "우리 마을에 태양광 패널을 설치하면 전기를 만들 수 있다", "correctAnswer": "O" },
-    { "question": "풍력 발전은 바람이 불지 않아도 전기를 만든다", "correctAnswer": "X" },
-    { "question": "재생에너지를 쓰는 마을은 지구를 지키는 데 도움이 된다", "correctAnswer": "O" },
-    { "question": "화석연료를 많이 쓰면 기후변화가 심해질 수 있다", "correctAnswer": "O" },
-    { "question": "친환경 에너지는 무조건 나쁘다", "correctAnswer": "X" },
-    { "question": "우리도 작은 실천으로 친환경 에너지 마을을 만드는 데 도움을 줄 수 있다", "correctAnswer": "O" }
+    { "question": "태양광과 풍력은 친환경 에너지이다", "correctAnswer": "O", "explanation": "태양광과 풍력은 햇빛과 바람으로 전기를 만들기 때문에 연기나 탄소를 거의 내지 않아요. 공기를 지키는 데 좋은 친환경 에너지입니다." },
+    { "question": "석탄과 석유는 화석연료이다", "correctAnswer": "O", "explanation": "석탄과 석유는 수억 년 전 동식물이 땅속에서 변해서 생긴 연료예요. 태우면 이산화탄소가 나와 지구 온난화에 영향을 줍니다." },
+    { "question": "재생에너지는 다시 만들 수 있는 에너지이다", "correctAnswer": "O", "explanation": "재생에너지는 햇빛, 바람, 물처럼 자연에 계속 있어서 다 써도 다시 쓸 수 있는 에너지예요. 끝나지 않는 에너지라고 할 수 있어요." },
+    { "question": "친환경 에너지를 쓰면 공기가 더 더러워진다", "correctAnswer": "X", "explanation": "친환경 에너지는 발전할 때 연기나 유해 가스를 거의 내지 않아요. 공기를 맑게 지키는 데 도움이 됩니다." },
+    { "question": "우리 마을에 태양광 패널을 설치하면 전기를 만들 수 있다", "correctAnswer": "O", "explanation": "태양광 패널은 햇빛을 받으면 직류 전기를 만들어요. 변환 장치를 거쳐 집에서 쓰는 전기로 사용할 수 있습니다." },
+    { "question": "풍력 발전은 바람이 불지 않아도 전기를 만든다", "correctAnswer": "X", "explanation": "풍력 발전은 바람으로 프로펠러가 돌아가면서 전기를 만들어요. 바람이 불어야 날개가 돌아가므로 바람이 필요합니다." },
+    { "question": "재생에너지를 쓰는 마을은 지구를 지키는 데 도움이 된다", "correctAnswer": "O", "explanation": "재생에너지를 쓰면 화석연료 사용이 줄어들어 이산화탄소가 적게 나와요. 그래서 기후변화를 막고 지구를 지키는 데 도움이 됩니다." },
+    { "question": "화석연료를 많이 쓰면 기후변화가 심해질 수 있다", "correctAnswer": "O", "explanation": "화석연료를 태우면 이산화탄소가 많이 나와 지구 온난화가 심해져요. 폭염, 가뭄, 폭우 같은 이상기후도 늘어날 수 있습니다." },
+    { "question": "친환경 에너지는 무조건 나쁘다", "correctAnswer": "X", "explanation": "친환경 에너지는 공기와 지구를 지키는 데 좋은 에너지예요. 탄소를 적게 내고 재활용할 수 있어 미래를 위한 에너지입니다." },
+    { "question": "우리도 작은 실천으로 친환경 에너지 마을을 만드는 데 도움을 줄 수 있다", "correctAnswer": "O", "explanation": "전기 아끼기, 태양광·풍력 같은 재생에너지 쓰기, 쓰레기 줄이기 등 작은 실천이 모이면 친환경 에너지 마을을 만드는 데 큰 도움이 됩니다." }
+  ],
+  "greenMatchRounds": [
+    { "pairs": [
+      { "left": "태양", "right": "태양광 발전소", "explanation": "태양 빛을 받아 전기로 바꾸는 시설이 태양광 발전소예요." },
+      { "left": "바람", "right": "풍력 발전기", "explanation": "바람으로 프로펠러를 돌려 전기를 만드는 설비가 풍력 발전기예요." },
+      { "left": "물", "right": "수력 발전소", "explanation": "흐르는 물로 터빈을 돌려 전기를 만드는 시설이 수력 발전소예요." },
+      { "left": "햇빛", "right": "태양광 패널", "explanation": "햇빛을 받아 전기를 만드는 판이 태양광 패널이에요." }
+    ]},
+    { "pairs": [
+      { "left": "지열", "right": "땅속 열 이용", "explanation": "땅속의 열을 이용해 난방이나 발전에 쓰는 에너지가 지열이에요." },
+      { "left": "바이오매스", "right": "생물 자원 에너지", "explanation": "나무, 농작물, 쓰레기 같은 생물 자원으로 만드는 에너지가 바이오매스예요." },
+      { "left": "석탄", "right": "화석연료", "explanation": "석탄은 오래전 식물이 땅속에서 변해 생긴 화석연료예요." },
+      { "left": "석유", "right": "화석연료", "explanation": "석유도 오래전 생물이 변해 생긴 화석연료로, 연소 시 탄소가 나와요." }
+    ]},
+    { "pairs": [
+      { "left": "재생에너지", "right": "다시 쓸 수 있는 에너지", "explanation": "재생에너지는 햇빛·바람·물처럼 계속 있어 다시 쓸 수 있는 에너지예요." },
+      { "left": "화석연료", "right": "탄소 많이 나오는 연료", "explanation": "화석연료를 태우면 이산화탄소가 많이 나와 지구 온난화를 일으켜요." },
+      { "left": "태양광", "right": "깨끗한 전기", "explanation": "태양광은 연소 없이 전기를 만들어 공기를 더럽히지 않아요." },
+      { "left": "풍력", "right": "바람으로 발전", "explanation": "풍력은 바람의 힘으로 터빈을 돌려 전기를 만들어요." }
+    ]},
+    { "pairs": [
+      { "left": "수력", "right": "물로 발전", "explanation": "수력은 강이나 댐의 물이 떨어지는 힘으로 터빈을 돌려 전기를 만들어요." },
+      { "left": "태양전지", "right": "햇빛을 전기로", "explanation": "태양전지는 햇빛을 받아 곧바로 전기로 바꾸는 장치예요." },
+      { "left": "풍력발전소", "right": "바람이 많은 곳에 세움", "explanation": "풍력발전소는 바람이 잘 부는 해안이나 산에 세워요." },
+      { "left": "수력발전", "right": "댐이나 강물 이용", "explanation": "수력발전은 댐에 모인 물이나 강물의 흐름을 이용해요." }
+    ]},
+    { "pairs": [
+      { "left": "재생에너지 발전", "right": "탄소 적게 나옴", "explanation": "재생에너지로 발전하면 이산화탄소가 거의 나오지 않아요." },
+      { "left": "화석연료 발전", "right": "이산화탄소 배출", "explanation": "석탄·석유를 태우면 이산화탄소가 많이 배출돼요." },
+      { "left": "친환경 에너지", "right": "공기 오염 적음", "explanation": "친환경 에너지는 연소가 없거나 적어 공기를 덜 오염시켜요." },
+      { "left": "지열 발전", "right": "땅속 열로 전기", "explanation": "땅속의 열로 증기를 만들거나 물을 데워 터빈을 돌려요." }
+    ]},
+    { "pairs": [
+      { "left": "태양광 패널", "right": "지붕에 설치", "explanation": "집이나 건물 지붕에 태양광 패널을 두면 햇빛으로 전기를 만들어 써요." },
+      { "left": "풍력 터빈", "right": "날개가 돌아감", "explanation": "바람에 풍력 터빈의 날개가 돌아가며 전기가 만들어져요." },
+      { "left": "수력 댐", "right": "물을 막아 활용", "explanation": "댐에 물을 모았다가 떨어뜨리며 터빈을 돌려 전기를 만들어요." },
+      { "left": "바이오가스", "right": "유기물에서 나옴", "explanation": "음식물쓰레기 등 유기물이 썩을 때 나오는 가스를 이용해요." }
+    ]},
+    { "pairs": [
+      { "left": "친환경 마을", "right": "재생에너지 사용", "explanation": "태양광·풍력 등을 쓰는 마을을 친환경 에너지 마을이라고 해요." },
+      { "left": "에너지 자립", "right": "스스로 전기 만듦", "explanation": "마을에서 필요한 전기를 재생에너지로 스스로 만드는 것을 말해요." },
+      { "left": "탄소 배출", "right": "화석연료 사용 시", "explanation": "화석연료를 태우면 탄소가 배출되어 지구 온난화가 심해져요." },
+      { "left": "넷제로", "right": "탄소 배출 줄이기", "explanation": "배출하는 탄소를 줄이고 흡수하는 만큼 맞추는 목표를 넷제로라고 해요." }
+    ]},
+    { "pairs": [
+      { "left": "태양열", "right": "햇빛으로 뜨거워짐", "explanation": "태양열은 햇빛으로 물이나 공기를 데우는 데 쓰여요." },
+      { "left": "수소 에너지", "right": "미래 친환경 연료", "explanation": "수소를 연소해도 물만 나와 친환경 에너지로 주목받아요." },
+      { "left": "연료전지", "right": "수소로 전기", "explanation": "수소와 산소를 반응시켜 전기를 만들고 물이 나와요." },
+      { "left": "에너지 전환", "right": "화석에서 재생으로", "explanation": "화석연료 대신 재생에너지를 쓰도록 바꾸는 것을 에너지 전환이라고 해요." }
+    ]},
+    { "pairs": [
+      { "left": "태양광 발전", "right": "낮에만 가능", "explanation": "태양광은 햇빛이 있을 때만 전기를 만들 수 있어요." },
+      { "left": "풍력 발전", "right": "바람 필요", "explanation": "풍력은 바람이 불어야 터빈이 돌아가 전기를 만들어요." },
+      { "left": "수력 발전", "right": "물의 높이 이용", "explanation": "높은 곳에서 낮은 곳으로 떨어지는 물의 힘을 이용해요." },
+      { "left": "지열 냉난방", "right": "땅속 온도 활용", "explanation": "땅속은 여름엔 시원하고 겨울엔 따뜻해 냉난방에 써요." }
+    ]},
+    { "pairs": [
+      { "left": "석탄 발전", "right": "공기 오염", "explanation": "석탄을 태우면 먼지와 가스가 나와 공기를 더럽혀요." },
+      { "left": "원자력", "right": "핵분열 에너지", "explanation": "원자력은 우라늄 등이 쪼개지며 나오는 열로 전기를 만들어요." },
+      { "left": "천연가스", "right": "화석연료", "explanation": "천연가스도 화석연료지만 석탄·석유보다 탄소가 적게 나와요." },
+      { "left": "재활용 에너지", "right": "쓰레기에서 에너지", "explanation": "쓰레기를 소각하거나 가스로 만들어 에너지를 얻을 수 있어요." }
+    ]},
+    { "pairs": [
+      { "left": "그린에너지", "right": "친환경 에너지", "explanation": "그린에너지는 지구에 해를 덜 주는 친환경 에너지를 말해요." },
+      { "left": "저탄소", "right": "탄소 적게 배출", "explanation": "저탄소는 이산화탄소를 적게 내는 방식이에요." },
+      { "left": "에너지 효율", "right": "적은 에너지로 많은 일", "explanation": "같은 양의 에너지로 더 많은 일을 하면 에너지 효율이 좋아요." },
+      { "left": "에너지 절약", "right": "쓰지 않을 때 끄기", "explanation": "필요할 때만 쓰고 안 쓸 때 끄면 에너지를 절약할 수 있어요." }
+    ]},
+    { "pairs": [
+      { "left": "마을 발전소", "right": "지역에서 전기 생산", "explanation": "마을 단위로 태양광·풍력 등을 설치해 전기를 만드는 곳이에요." },
+      { "left": "태양광 지붕", "right": "집에서 전기 만듦", "explanation": "집 지붕에 패널을 달면 그 집에서 쓰는 전기를 만들 수 있어요." },
+      { "left": "풍차", "right": "바람으로 돌아감", "explanation": "예전 풍차도 바람으로 돌아 곡식 빻는 데 쓰였어요. 지금은 전기 만드는 데 써요." },
+      { "left": "수력 터빈", "right": "물의 힘으로 회전", "explanation": "물이 떨어지거나 흐르는 힘으로 터빈이 돌아 전기가 만들어져요." },
+      { "left": "재생에너지 비율", "right": "전기 중 재생 비율", "explanation": "쓰는 전기 가운데 태양광·풍력 등 재생에너지가 차지하는 비율이에요." }
+    ]}
+  ],
+  "greenVillageRounds": [
+    { "items": [{ "id": "g1_1", "label": "필요 없는 불 끄기", "bucketId": "save", "explanation": "불을 끄면 전기를 아껴요." }, { "id": "g1_2", "label": "집안 모든 불 켜두기", "bucketId": "waste", "explanation": "쓰지 않는 불은 끄면 돼요." }, { "id": "g1_3", "label": "짧게 샤워하기", "bucketId": "save", "explanation": "물과 온수 전기를 아껴요." }, { "id": "g1_4", "label": "에어컨 세게 틀기", "bucketId": "waste", "explanation": "적당히 쓰면 전기를 아껴요." }] },
+    { "items": [{ "id": "g2_1", "label": "대기전력 끄기", "bucketId": "save", "explanation": "콘센트를 뽑으면 대기전력을 줄여요." }, { "id": "g2_2", "label": "분리배출 잘하기", "bucketId": "save", "explanation": "재활용하면 자원을 아껴요." }, { "id": "g2_3", "label": "쓰레기 아무 데나 버리기", "bucketId": "waste", "explanation": "분리배출하면 돼요." }, { "id": "g2_4", "label": "낮에도 형광등 켜기", "bucketId": "waste", "explanation": "햇빛을 이용하면 돼요." }] },
+    { "items": [{ "id": "g3_1", "label": "필요한 방만 불 켜기", "bucketId": "save", "explanation": "쓰는 곳만 밝히면 전기를 아껴요." }, { "id": "g3_2", "label": "나무 심기", "bucketId": "save", "explanation": "나무는 공기를 맑게 해요." }, { "id": "g3_3", "label": "TV와 불 같이 켜두기", "bucketId": "waste", "explanation": "보지 않을 때는 끄면 돼요." }, { "id": "g3_4", "label": "물 계속 틀어두기", "bucketId": "waste", "explanation": "필요할 때만 틀면 돼요." }] },
+    { "items": [{ "id": "g4_1", "label": "걷기와 자전거 타기", "bucketId": "save", "explanation": "연료를 안 쓰면 에너지를 아껴요." }, { "id": "g4_2", "label": "따뜻하게 입고 난방 줄이기", "bucketId": "save", "explanation": "난방을 덜 쓰면 에너지를 아껴요." }, { "id": "g4_3", "label": "친환경 제품 쓰기", "bucketId": "save", "explanation": "지구를 지키는 데 도움이 돼요." }, { "id": "g4_4", "label": "가족과 불 끄기 약속하기", "bucketId": "save", "explanation": "함께 아끼면 효과가 커요." }] },
+    { "items": [{ "id": "g5_1", "label": "콘센트 항상 꽂아 두기", "bucketId": "waste", "explanation": "안 쓰면 뽑으면 돼요." }, { "id": "g5_2", "label": "각자 마음대로 전기 쓰기", "bucketId": "waste", "explanation": "함께 아끼는 약속이 좋아요." }, { "id": "g5_3", "label": "커튼 열어 햇빛 쓰기", "bucketId": "save", "explanation": "낮에는 불을 끄고 햇빛을 써요." }, { "id": "g5_4", "label": "일회용품 많이 쓰기", "bucketId": "waste", "explanation": "다회용품을 쓰면 돼요." }] },
+    { "items": [{ "id": "g6_1", "label": "플라스틱만 사용하기", "bucketId": "waste", "explanation": "친환경 제품을 쓰면 돼요." }, { "id": "g6_2", "label": "포장 많은 물건만 사기", "bucketId": "waste", "explanation": "포장을 줄이면 돼요." }, { "id": "g6_3", "label": "절전 모드 쓰기", "bucketId": "save", "explanation": "전기를 아껴요." }, { "id": "g6_4", "label": "쉬는 시간 불 끄기", "bucketId": "save", "explanation": "교실을 비울 때 불을 꺼요." }] },
+    { "items": [{ "id": "g7_1", "label": "냉장고 문 자주 열기", "bucketId": "waste", "explanation": "필요한 것만 빨리 꺼내요." }, { "id": "g7_2", "label": "충전 끝나면 플러그 뽑기", "bucketId": "save", "explanation": "대기전력을 줄여요." }, { "id": "g7_3", "label": "에어컨 문 열고 틀기", "bucketId": "waste", "explanation": "문을 닫고 틀면 시원해요." }, { "id": "g7_4", "label": "필요할 때만 컴퓨터 켜기", "bucketId": "save", "explanation": "쓰지 않을 때는 끄면 돼요." }] },
+    { "items": [{ "id": "g8_1", "label": "잠들 때까지 불 켜두기", "bucketId": "waste", "explanation": "잠들기 전에 불을 끄면 돼요." }, { "id": "g8_2", "label": "낮에 햇빛으로 공부하기", "bucketId": "save", "explanation": "불을 켜지 않아도 돼요." }, { "id": "g8_3", "label": "물 틀어놓고 설거지하기", "bucketId": "waste", "explanation": "필요할 때만 틀면 돼요." }, { "id": "g8_4", "label": "사용 끝난 코드 뽑기", "bucketId": "save", "explanation": "대기전력을 줄여요." }] },
+    { "items": [{ "id": "g9_1", "label": "TV 배경처럼 켜두기", "bucketId": "waste", "explanation": "보지 않을 때는 끄면 돼요." }, { "id": "g9_2", "label": "창문 열어 시원하게 하기", "bucketId": "save", "explanation": "에어컨을 덜 써요." }, { "id": "g9_3", "label": "에어컨 가장 세게 틀기", "bucketId": "waste", "explanation": "적당히 틀면 돼요." }, { "id": "g9_4", "label": "책 읽을 땐 스탠드만 켜기", "bucketId": "save", "explanation": "필요한 만큼만 밝히면 돼요." }] },
+    { "items": [{ "id": "g10_1", "label": "빈 교실 불 켜놓기", "bucketId": "waste", "explanation": "쉬는 시간에 불을 끄면 돼요." }, { "id": "g10_2", "label": "욕조 가득 받고 목욕하기", "bucketId": "waste", "explanation": "짧게 샤워하면 돼요." }, { "id": "g10_3", "label": "커튼 열어 자연광 쓰기", "bucketId": "save", "explanation": "불을 켜지 않아도 돼요." }, { "id": "g10_4", "label": "절전 모드로 두기", "bucketId": "save", "explanation": "전기를 아껴요." }, { "id": "g10_5", "label": "모든 콘센트 계속 꽂아 두기", "bucketId": "waste", "explanation": "안 쓰는 플러그는 뽑으면 돼요." }] }
   ]
 }
 

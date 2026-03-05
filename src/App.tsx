@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import Login from './pages/Login';
-import CountryList from './pages/CountryList';
-import CountryActivityList from './pages/CountryActivityList';
+import EnvContentList from './pages/EnvContentList';
+import EnvContentActivityList from './pages/EnvContentActivityList';
 import ActivityPlay from './pages/ActivityPlay';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -16,23 +16,23 @@ export default function App() {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route
-        path="/countries"
+        path="/contents"
         element={
           <ProtectedRoute>
-            <CountryList />
+            <EnvContentList />
           </ProtectedRoute>
         }
       />
       <Route
-        path="/countries/:countryId"
+        path="/contents/:countryId"
         element={
           <ProtectedRoute>
-            <CountryActivityList />
+            <EnvContentActivityList />
           </ProtectedRoute>
         }
       />
       <Route
-        path="/countries/:countryId/activity/:activityType"
+        path="/contents/:countryId/activity/:activityType"
         element={
           <ProtectedRoute>
             <ActivityPlay />

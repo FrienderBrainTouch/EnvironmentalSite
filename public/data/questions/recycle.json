@@ -1,63 +1,230 @@
 {
   "flagFind": [
-    { "question": "다음 중 플라스틱 분리배출은 무엇일까요?", "options": ["페트병", "신문지", "캔", "유리병"], "correctAnswer": "페트병" },
-    { "question": "다음 중 종이 분리배출은 무엇일까요?", "options": ["신문지", "페트병", "비닐봉지", "캔"], "correctAnswer": "신문지" },
-    { "question": "다음 중 캔류 분리배출은 무엇일까요?", "options": ["콜라캔", "종이컵", "페트병", "유리병"], "correctAnswer": "콜라캔" },
-    { "question": "다음 중 유리 분리배출은 무엇일까요?", "options": ["유리병", "페트병", "신문지", "캔"], "correctAnswer": "유리병" },
-    { "question": "다음 중 비닐 분리배출은 무엇일까요?", "options": ["비닐봉지", "신문지", "유리병", "캔"], "correctAnswer": "비닐봉지" },
-    { "question": "다음 중 페트병은 무엇일까요?", "options": ["생수병", "신문지", "캔", "비닐"], "correctAnswer": "생수병" },
-    { "question": "다음 중 스티로폼은 무엇일까요?", "options": ["스티로폼 상자", "유리병", "신문지", "캔"], "correctAnswer": "스티로폼 상자" },
-    { "question": "다음 중 종이팩은 무엇일까요?", "options": ["우유팩", "페트병", "캔", "비닐"], "correctAnswer": "우유팩" },
-    { "question": "다음 중 플라스틱 용기는 무엇일까요?", "options": ["요거트통", "신문지", "유리병", "캔"], "correctAnswer": "요거트통" },
-    { "question": "다음 중 캔류는 무엇일까요?", "options": ["참치캔", "비닐", "종이", "유리"], "correctAnswer": "참치캔" }
+    { "question": "다음 중 플라스틱 분리배출은 무엇일까요?", "options": ["페트병", "신문지", "캔", "유리병"], "correctAnswer": "페트병", "explanation": "페트병은 플라스틱이에요. 라벨을 떼고 씻어서 플라스틱 통에 버리면 재활용돼요." },
+    { "question": "다음 중 종이 분리배출은 무엇일까요?", "options": ["신문지", "페트병", "비닐봉지", "캔"], "correctAnswer": "신문지", "explanation": "신문지는 종이예요. 묶어서 종이팩·종이 통에 버리면 재활용돼요." },
+    { "question": "다음 중 캔류 분리배출은 무엇일까요?", "options": ["콜라캔", "종이컵", "페트병", "유리병"], "correctAnswer": "콜라캔", "explanation": "콜라캔은 금속 캔이에요. 내용물을 비우고 씻어서 캔 통에 버려요." },
+    { "question": "다음 중 유리 분리배출은 무엇일까요?", "options": ["유리병", "페트병", "신문지", "캔"], "correctAnswer": "유리병", "explanation": "유리병은 유리로 만들어져요. 깨지지 않게 내용물을 비우고 유리 통에 버려요." },
+    { "question": "다음 중 비닐 분리배출은 무엇일까요?", "options": ["비닐봉지", "신문지", "유리병", "캔"], "correctAnswer": "비닐봉지", "explanation": "비닐봉지는 깨끗할 때 비닐·플라스틱으로 분리해 버려요. 음식물이 묻으면 일반쓰레기예요." },
+    { "question": "다음 중 페트병은 무엇일까요?", "options": ["생수병", "신문지", "캔", "비닐"], "correctAnswer": "생수병", "explanation": "생수병은 대부분 페트병이에요. 플라스틱으로 재활용돼요." },
+    { "question": "다음 중 스티로폼은 무엇일까요?", "options": ["스티로폼 상자", "유리병", "신문지", "캔"], "correctAnswer": "스티로폼 상자", "explanation": "스티로폼 상자는 플라스틱이에요. 깨끗이 씻어서 플라스틱으로 버려요." },
+    { "question": "다음 중 종이팩은 무엇일까요?", "options": ["우유팩", "페트병", "캔", "비닐"], "correctAnswer": "우유팩", "explanation": "우유팩은 종이팩이에요. 내용물을 비우고 말려서 종이팩 수거함에 버려요." },
+    { "question": "다음 중 플라스틱 용기는 무엇일까요?", "options": ["요거트통", "신문지", "유리병", "캔"], "correctAnswer": "요거트통", "explanation": "요거트통은 플라스틱 용기예요. 씻어서 플라스틱 통에 버리면 돼요." },
+    { "question": "다음 중 캔류는 무엇일까요?", "options": ["참치캔", "비닐", "종이", "유리"], "correctAnswer": "참치캔", "explanation": "참치캔은 금속 캔이에요. 캔류로 분리배출해요." }
   ],
   "foodFind": [
-    { "question": "페트병을 버릴 때 올바른 방법은 무엇일까요?", "options": ["라벨을 떼고 버리기", "물 채워 버리기", "뚜껑 닫고 버리기", "그대로 버리기"], "correctAnswer": "라벨을 떼고 버리기" },
-    { "question": "캔을 버릴 때 어떻게 해야 할까요?", "options": ["씻어서 버리기", "음식물 넣어 버리기", "종이와 함께 버리기", "물 채워 버리기"], "correctAnswer": "씻어서 버리기" },
-    { "question": "종이를 버릴 때 어떻게 해야 할까요?", "options": ["묶어서 버리기", "젖은 상태로 버리기", "구겨서 버리기", "비닐에 넣어 버리기"], "correctAnswer": "묶어서 버리기" },
-    { "question": "플라스틱 용기를 버릴 때 어떻게 해야 할까요?", "options": ["씻어서 버리기", "음식물 묻힌 채 버리기", "물 채워 버리기", "그대로 버리기"], "correctAnswer": "씻어서 버리기" },
-    { "question": "유리병을 버릴 때 해야 할 행동은?", "options": ["내용물 비우기", "내용물 그대로 버리기", "물 채우기", "종이와 같이 버리기"], "correctAnswer": "내용물 비우기" },
-    { "question": "스티로폼을 버릴 때 해야 할 행동은?", "options": ["깨끗하게 씻기", "음식물 묻혀 버리기", "색칠해서 버리기", "종이와 같이 버리기"], "correctAnswer": "깨끗하게 씻기" },
-    { "question": "비닐을 버릴 때 어떻게 해야 할까요?", "options": ["깨끗한 상태로 버리기", "음식물 묻힌 채 버리기", "종이와 함께 버리기", "캔과 함께 버리기"], "correctAnswer": "깨끗한 상태로 버리기" },
-    { "question": "페트병 뚜껑은 어떻게 할까요?", "options": ["분리해서 버리기", "같이 버리기", "물 채워 버리기", "종이에 넣기"], "correctAnswer": "분리해서 버리기" },
-    { "question": "캔을 버릴 때 해야 할 행동은?", "options": ["내용물 비우기", "음식물 넣기", "물 채우기", "종이와 함께 버리기"], "correctAnswer": "내용물 비우기" },
-    { "question": "종이컵은 어떻게 버리는 것이 좋을까요?", "options": ["일반쓰레기", "플라스틱", "유리", "캔"], "correctAnswer": "일반쓰레기" }
+    { "question": "페트병을 버릴 때 올바른 방법은 무엇일까요?", "options": ["라벨을 떼고 버리기", "물 채워 버리기", "뚜껑 닫고 버리기", "그대로 버리기"], "correctAnswer": "라벨을 떼고 버리기", "explanation": "라벨을 떼면 재활용 품질이 좋아져요. 뚜껑은 플라스틱으로 따로 버려요." },
+    { "question": "캔을 버릴 때 어떻게 해야 할까요?", "options": ["씻어서 버리기", "음식물 넣어 버리기", "종이와 함께 버리기", "물 채워 버리기"], "correctAnswer": "씻어서 버리기", "explanation": "캔은 내용물을 비우고 헹궈서 버리면 재활용이 잘 돼요." },
+    { "question": "종이를 버릴 때 어떻게 해야 할까요?", "options": ["묶어서 버리기", "젖은 상태로 버리기", "구겨서 버리기", "비닐에 넣어 버리기"], "correctAnswer": "묶어서 버리기", "explanation": "종이는 묶어서 버리면 수거와 재활용이 쉬워요." },
+    { "question": "플라스틱 용기를 버릴 때 어떻게 해야 할까요?", "options": ["씻어서 버리기", "음식물 묻힌 채 버리기", "물 채워 버리기", "그대로 버리기"], "correctAnswer": "씻어서 버리기", "explanation": "플라스틱 용기는 음식물을 씻어 내고 버려야 재활용돼요." },
+    { "question": "유리병을 버릴 때 해야 할 행동은?", "options": ["내용물 비우기", "내용물 그대로 버리기", "물 채우기", "종이와 같이 버리기"], "correctAnswer": "내용물 비우기", "explanation": "유리병은 내용물을 비우고, 깨지지 않게 조심해서 유리 통에 버려요." },
+    { "question": "스티로폼을 버릴 때 해야 할 행동은?", "options": ["깨끗하게 씻기", "음식물 묻혀 버리기", "색칠해서 버리기", "종이와 같이 버리기"], "correctAnswer": "깨끗하게 씻기", "explanation": "스티로폼도 음식물이 묻지 않게 씻어서 버리면 재활용이 잘 돼요." },
+    { "question": "비닐을 버릴 때 어떻게 해야 할까요?", "options": ["깨끗한 상태로 버리기", "음식물 묻힌 채 버리기", "종이와 함께 버리기", "캔과 함께 버리기"], "correctAnswer": "깨끗한 상태로 버리기", "explanation": "비닐은 깨끗할 때만 비닐·플라스틱으로 버려요. 더러우면 일반쓰레기예요." },
+    { "question": "페트병 뚜껑은 어떻게 할까요?", "options": ["분리해서 버리기", "같이 버리기", "물 채워 버리기", "종이에 넣기"], "correctAnswer": "분리해서 버리기", "explanation": "뚜껑은 병과 분리해서 플라스틱으로 버리면 재활용 공정에서 잘 처리돼요." },
+    { "question": "캔을 버릴 때 해야 할 행동은?", "options": ["내용물 비우기", "음식물 넣기", "물 채우기", "종이와 함께 버리기"], "correctAnswer": "내용물 비우기", "explanation": "캔은 내용물을 비우고 씻어서 버려야 재활용돼요." },
+    { "question": "종이컵은 어떻게 버리는 것이 좋을까요?", "options": ["일반쓰레기", "플라스틱", "유리", "캔"], "correctAnswer": "일반쓰레기", "explanation": "종이컵은 코팅이 있어 재활용이 어렵고, 음식물이 묻을 수 있어 일반쓰레기로 버려요." }
   ],
   "cultureFind": [
-    { "question": "다음 중 잘못된 분리배출은 무엇일까요?", "options": ["음식물이 묻은 플라스틱 버리기", "페트병 씻어서 버리기", "신문지 묶어서 버리기", "캔 씻어서 버리기"], "correctAnswer": "음식물이 묻은 플라스틱 버리기" },
-    { "question": "다음 중 올바른 행동은 무엇일까요?", "options": ["종이를 묶어서 버리기", "플라스틱에 음식물 묻힌 채 버리기", "유리병 깨뜨려 버리기", "캔에 음식물 넣기"], "correctAnswer": "종이를 묶어서 버리기" },
-    { "question": "다음 중 잘못된 분리배출은 무엇일까요?", "options": ["음식물 묻은 종이컵을 종이로 버리기", "깨끗한 신문지를 종이로 버리기", "라벨 뗀 페트병을 플라스틱으로 버리기", "깨끗한 캔을 캔류로 버리기"], "correctAnswer": "음식물 묻은 종이컵을 종이로 버리기" },
-    { "question": "다음 중 올바른 분리배출은 무엇일까요?", "options": ["기름 묻은 피자 박스는 일반쓰레기로 버리기", "기름 묻은 피자 박스를 종이로 버리기", "음식물 담긴 플라스틱을 바로 버리기", "깨지지 않게 유리병에 물 채워 버리기"], "correctAnswer": "기름 묻은 피자 박스는 일반쓰레기로 버리기" },
-    { "question": "다음 중 잘못 버린 쓰레기를 고르세요.", "options": ["플라스틱 통에 음식물이 남아 있음", "비운 페트병", "깨끗이 씻은 캔", "묶은 신문지"], "correctAnswer": "플라스틱 통에 음식물이 남아 있음" },
-    { "question": "다음 중 재활용을 방해하는 행동은 무엇일까요?", "options": ["플라스틱과 일반쓰레기를 섞어 버리기", "플라스틱과 일반쓰레기를 나누어 버리기", "페트병을 씻어 버리기", "신문지를 묶어 버리기"], "correctAnswer": "플라스틱과 일반쓰레기를 섞어 버리기" },
-    { "question": "다음 중 분리배출이 잘못된 사례는?", "options": ["깨진 유리 조각을 종이에 싸서 일반쓰레기로 버리기", "깨지지 않은 유리병을 유리로 버리기", "페트병을 씻어 플라스틱으로 버리기", "종이를 묶어 종이로 버리기"], "correctAnswer": "깨진 유리 조각을 종이에 싸서 일반쓰레기로 버리기" },
-    { "question": "다음 중 분리배출이 잘못된 사례는?", "options": ["플라스틱 병에 뚜껑을 그대로 둔 채 버리기", "플라스틱 병과 뚜껑을 따로 버리기", "유리병 안을 비우고 버리기", "캔을 헹구고 버리기"], "correctAnswer": "플라스틱 병에 뚜껑을 그대로 둔 채 버리기" },
-    { "question": "다음 중 올바른 분리배출은 무엇일까요?", "options": ["깨끗한 비닐은 비닐로, 더러운 비닐은 일반쓰레기로", "모든 비닐을 종이로", "모든 비닐을 유리로", "모든 비닐을 음식물로"], "correctAnswer": "깨끗한 비닐은 비닐로, 더러운 비닐은 일반쓰레기로" },
-    { "question": "다음 중 분리배출 장소가 잘못된 것은?", "options": ["플라스틱 병을 종이통에 버리기", "플라스틱 병을 플라스틱통에 버리기", "신문지를 종이통에 버리기", "캔을 캔류통에 버리기"], "correctAnswer": "플라스틱 병을 종이통에 버리기" }
+    { "question": "다음 중 잘못된 분리배출은 무엇일까요?", "options": ["음식물이 묻은 플라스틱 버리기", "페트병 씻어서 버리기", "신문지 묶어서 버리기", "캔 씻어서 버리기"], "correctAnswer": "음식물이 묻은 플라스틱 버리기", "explanation": "음식물이 묻은 플라스틱은 재활용이 어려워요. 씻어서 버려야 해요." },
+    { "question": "다음 중 올바른 행동은 무엇일까요?", "options": ["종이를 묶어서 버리기", "플라스틱에 음식물 묻힌 채 버리기", "유리병 깨뜨려 버리기", "캔에 음식물 넣기"], "correctAnswer": "종이를 묶어서 버리기", "explanation": "종이는 묶어서 버리면 수거가 쉽고 재활용도 잘 돼요." },
+    { "question": "다음 중 잘못된 분리배출은 무엇일까요?", "options": ["음식물 묻은 종이컵을 종이로 버리기", "깨끗한 신문지를 종이로 버리기", "라벨 뗀 페트병을 플라스틱으로 버리기", "깨끗한 캔을 캔류로 버리기"], "correctAnswer": "음식물 묻은 종이컵을 종이로 버리기", "explanation": "음식물이 묻은 종이컵은 재활용이 어렵고, 종이컵은 보통 일반쓰레기예요." },
+    { "question": "다음 중 올바른 분리배출은 무엇일까요?", "options": ["기름 묻은 피자 박스는 일반쓰레기로 버리기", "기름 묻은 피자 박스를 종이로 버리기", "음식물 담긴 플라스틱을 바로 버리기", "깨지지 않게 유리병에 물 채워 버리기"], "correctAnswer": "기름 묻은 피자 박스는 일반쓰레기로 버리기", "explanation": "기름이 많이 묻은 종이는 재활용이 어려우므로 일반쓰레기로 버려요." },
+    { "question": "다음 중 잘못 버린 쓰레기를 고르세요.", "options": ["플라스틱 통에 음식물이 남아 있음", "비운 페트병", "깨끗이 씻은 캔", "묶은 신문지"], "correctAnswer": "플라스틱 통에 음식물이 남아 있음", "explanation": "재활용품에는 음식물이 남아 있으면 안 돼요. 비우고 씻어서 버려요." },
+    { "question": "다음 중 재활용을 방해하는 행동은 무엇일까요?", "options": ["플라스틱과 일반쓰레기를 섞어 버리기", "플라스틱과 일반쓰레기를 나누어 버리기", "페트병을 씻어 버리기", "신문지를 묶어 버리기"], "correctAnswer": "플라스틱과 일반쓰레기를 섞어 버리기", "explanation": "쓰레기를 섞어 버리면 재활용이 어려워요. 종류별로 나누어 버려요." },
+    { "question": "다음 중 분리배출이 잘못된 사례는?", "options": ["깨진 유리 조각을 종이에 싸서 일반쓰레기로 버리기", "깨지지 않은 유리병을 유리로 버리기", "페트병을 씻어 플라스틱으로 버리기", "종이를 묶어 종이로 버리기"], "correctAnswer": "깨진 유리 조각을 종이에 싸서 일반쓰레기로 버리기", "explanation": "깨진 유리는 다칠 수 있으니 종이에 싸서 일반쓰레기로 버리는 것이 맞아요. 여기선 다른 선택이 올바른 행동이에요." },
+    { "question": "다음 중 분리배출이 잘못된 사례는?", "options": ["플라스틱 병에 뚜껑을 그대로 둔 채 버리기", "플라스틱 병과 뚜껑을 따로 버리기", "유리병 안을 비우고 버리기", "캔을 헹구고 버리기"], "correctAnswer": "플라스틱 병에 뚜껑을 그대로 둔 채 버리기", "explanation": "뚜껑은 병과 분리해서 버려야 재활용이 잘 돼요." },
+    { "question": "다음 중 올바른 분리배출은 무엇일까요?", "options": ["깨끗한 비닐은 비닐로, 더러운 비닐은 일반쓰레기로", "모든 비닐을 종이로", "모든 비닐을 유리로", "모든 비닐을 음식물로"], "correctAnswer": "깨끗한 비닐은 비닐로, 더러운 비닐은 일반쓰레기로", "explanation": "비닐은 깨끗할 때만 비닐로 버리고, 음식물이 묻었으면 일반쓰레기예요." },
+    { "question": "다음 중 분리배출 장소가 잘못된 것은?", "options": ["플라스틱 병을 종이통에 버리기", "플라스틱 병을 플라스틱통에 버리기", "신문지를 종이통에 버리기", "캔을 캔류통에 버리기"], "correctAnswer": "플라스틱 병을 종이통에 버리기", "explanation": "플라스틱 병은 플라스틱 통에 버려야 해요. 종이통에 넣으면 재활용이 어려워요." }
   ],
   "landmarkFind": [
-    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["페트병", "음식물", "휴지", "빵"], "correctAnswer": "페트병" },
-    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["신문지", "음식물", "휴지", "사탕"], "correctAnswer": "신문지" },
-    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["깨끗한 캔", "남은 밥", "사과 껍질", "닭뼈"], "correctAnswer": "깨끗한 캔" },
-    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["플라스틱 장난감", "바나나 껍질", "계란 껍데기", "음식물"], "correctAnswer": "플라스틱 장난감" },
-    { "question": "다음 중 재활용이 어려운 것은 무엇일까요?", "options": ["휴지", "페트병", "캔", "종이 상자"], "correctAnswer": "휴지" },
-    { "question": "다음 중 재활용이 어려운 것은 무엇일까요?", "options": ["기름이 많이 묻은 피자 박스", "깨끗한 종이 상자", "비닐 포장지", "플라스틱 병"], "correctAnswer": "기름이 많이 묻은 피자 박스" },
-    { "question": "다음 중 재활용하면 좋은 것은 무엇일까요?", "options": ["종이 상자", "남은 밥", "과일 껍질", "음식 쓰레기"], "correctAnswer": "종이 상자" },
-    { "question": "다음 중 재활용하면 자원을 아낄 수 있는 것은?", "options": ["캔과 페트병", "남은 밥", "귤 껍질", "바나나 껍질"], "correctAnswer": "캔과 페트병" },
-    { "question": "다음 중 재활용 센터로 보내는 것이 좋은 것은?", "options": ["종이, 플라스틱, 캔", "남은 음식을 그대로", "쓰레기를 섞어서", "깨진 유리와 음식물"], "correctAnswer": "종이, 플라스틱, 캔" },
-    { "question": "다음 중 재활용이 잘 이루어지면 좋은 점은?", "options": ["새 자원을 덜 쓰게 된다", "쓰레기가 더 많아진다", "지구가 더 더워진다", "바다가 더 더러워진다"], "correctAnswer": "새 자원을 덜 쓰게 된다" }
+    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["페트병", "음식물", "휴지", "빵"], "correctAnswer": "페트병", "explanation": "페트병은 플라스틱으로 재활용돼요. 새 병이나 옷 소재로 다시 쓰여요." },
+    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["신문지", "음식물", "휴지", "사탕"], "correctAnswer": "신문지", "explanation": "신문지는 종이로 재활용돼요. 묶어서 종이로 분리배출해요." },
+    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["깨끗한 캔", "남은 밥", "사과 껍질", "닭뼈"], "correctAnswer": "깨끗한 캔", "explanation": "깨끗한 캔은 금속으로 재활용돼요. 자동차나 건축 자재로 쓰여요." },
+    { "question": "다음 중 재활용 가능한 것은 무엇일까요?", "options": ["플라스틱 장난감", "바나나 껍질", "계란 껍데기", "음식물"], "correctAnswer": "플라스틱 장난감", "explanation": "플라스틱 제품은 플라스틱으로 재활용할 수 있어요. 음식물은 퇴비 등으로 따로 처리해요." },
+    { "question": "다음 중 재활용이 어려운 것은 무엇일까요?", "options": ["휴지", "페트병", "캔", "종이 상자"], "correctAnswer": "휴지", "explanation": "휴지는 이미 사용한 종이라 재활용이 어렵고, 일반쓰레기로 버려요." },
+    { "question": "다음 중 재활용이 어려운 것은 무엇일까요?", "options": ["기름이 많이 묻은 피자 박스", "깨끗한 종이 상자", "비닐 포장지", "플라스틱 병"], "correctAnswer": "기름이 많이 묻은 피자 박스", "explanation": "기름이 많이 묻은 종이는 재활용이 어려우므로 일반쓰레기로 버려요." },
+    { "question": "다음 중 재활용하면 좋은 것은 무엇일까요?", "options": ["종이 상자", "남은 밥", "과일 껍질", "음식 쓰레기"], "correctAnswer": "종이 상자", "explanation": "종이 상자는 깨끗하면 종이로 재활용돼요. 음식물은 퇴비나 음식물쓰레기로 버려요." },
+    { "question": "다음 중 재활용하면 자원을 아낄 수 있는 것은?", "options": ["캔과 페트병", "남은 밥", "귤 껍질", "바나나 껍질"], "correctAnswer": "캔과 페트병", "explanation": "캔과 페트병을 재활용하면 새 자원을 덜 쓰고 지구를 지키는 데 도움이 돼요." },
+    { "question": "다음 중 재활용 센터로 보내는 것이 좋은 것은?", "options": ["종이, 플라스틱, 캔", "남은 음식을 그대로", "쓰레기를 섞어서", "깨진 유리와 음식물"], "correctAnswer": "종이, 플라스틱, 캔", "explanation": "종이·플라스틱·캔은 분리배출하면 재활용 센터로 가서 다시 자원으로 쓰여요." },
+    { "question": "다음 중 재활용이 잘 이루어지면 좋은 점은?", "options": ["새 자원을 덜 쓰게 된다", "쓰레기가 더 많아진다", "지구가 더 더워진다", "바다가 더 더러워진다"], "correctAnswer": "새 자원을 덜 쓰게 된다", "explanation": "재활용을 하면 자원을 다시 쓰기 때문에 새로 채굴하거나 만드는 양을 줄일 수 있어요." }
   ],
   "oxQuiz": [
-    { "question": "플라스틱 병은 깨끗이 씻어 분리배출해야 한다", "correctAnswer": "O" },
-    { "question": "기름이 많이 묻은 피자 박스는 종이로 분리배출해도 된다", "correctAnswer": "X" },
-    { "question": "종이와 플라스틱을 섞어서 버리면 재활용이 어렵다", "correctAnswer": "O" },
-    { "question": "깨끗한 캔은 재활용할 수 있다", "correctAnswer": "O" },
-    { "question": "분리배출을 잘하면 쓰레기 양을 줄일 수 있다", "correctAnswer": "O" },
-    { "question": "깨진 유리는 그냥 맨손으로 주워도 된다", "correctAnswer": "X" },
-    { "question": "재활용은 자원을 다시 사용하는 것이다", "correctAnswer": "O" },
-    { "question": "쓰레기를 아무 통에나 버려도 괜찮다", "correctAnswer": "X" },
-    { "question": "우유팩은 종이팩으로 따로 모아 버리면 좋다", "correctAnswer": "O" },
-    { "question": "분리배출을 잘하면 지구를 지키는 데 도움이 된다", "correctAnswer": "O" }
+    { "question": "플라스틱 병은 깨끗이 씻어 분리배출해야 한다", "correctAnswer": "O", "explanation": "플라스틱 병은 음식물을 씻어 내고 버려야 재활용 품질이 좋아져요." },
+    { "question": "기름이 많이 묻은 피자 박스는 종이로 분리배출해도 된다", "correctAnswer": "X", "explanation": "기름이 많이 묻은 종이는 재활용이 어려우므로 일반쓰레기로 버려요." },
+    { "question": "종이와 플라스틱을 섞어서 버리면 재활용이 어렵다", "correctAnswer": "O", "explanation": "쓰레기를 섞어 버리면 재활용 공정에서 나누기 어렵고 품질이 떨어져요." },
+    { "question": "깨끗한 캔은 재활용할 수 있다", "correctAnswer": "O", "explanation": "깨끗한 캔은 금속으로 재활용돼요. 내용물을 비우고 씻어서 버리면 돼요." },
+    { "question": "분리배출을 잘하면 쓰레기 양을 줄일 수 있다", "correctAnswer": "O", "explanation": "분리배출을 하면 재활용되는 양이 늘어나서 매립·소각되는 쓰레기가 줄어들어요." },
+    { "question": "깨진 유리는 그냥 맨손으로 주워도 된다", "correctAnswer": "X", "explanation": "깨진 유리는 다칠 수 있으니 장갑을 끼고, 종이에 싸서 일반쓰레기로 버려요." },
+    { "question": "재활용은 자원을 다시 사용하는 것이다", "correctAnswer": "O", "explanation": "재활용은 쓰레기를 다시 자원으로 만들어 쓰는 것이에요." },
+    { "question": "쓰레기를 아무 통에나 버려도 괜찮다", "correctAnswer": "X", "explanation": "쓰레기는 종류별로 맞는 통에 버려야 재활용이 잘 되고 환경도 지켜져요." },
+    { "question": "우유팩은 종이팩으로 따로 모아 버리면 좋다", "correctAnswer": "O", "explanation": "우유팩은 내용물을 비우고 말려서 종이팩 수거함이나 종이팩으로 배출해요." },
+    { "question": "분리배출을 잘하면 지구를 지키는 데 도움이 된다", "correctAnswer": "O", "explanation": "분리배출을 하면 자원을 아끼고 쓰레기를 줄여서 지구 환경을 지키는 데 도움이 돼요." }
+  ],
+  "dragByCategoryRounds": [
+    {
+      "items": [
+        { "id": "r1_1", "label": "신문지", "bucketId": "paper", "explanation": "신문지는 종이예요. 묶어서 종이 통에 버리면 재활용돼요." },
+        { "id": "r1_2", "label": "페트병", "bucketId": "plastic", "explanation": "페트병은 플라스틱이에요. 라벨을 떼고 씻어서 플라스틱 통에 버려요." },
+        { "id": "r1_3", "label": "콜라캔", "bucketId": "can", "explanation": "콜라캔은 금속 캔이에요. 내용물을 비우고 씻어서 캔 통에 버려요." },
+        { "id": "r1_4", "label": "유리병", "bucketId": "glass", "explanation": "유리병은 유리예요. 내용물을 비우고 유리 통에 버려요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r2_1", "label": "우유팩", "bucketId": "paper", "explanation": "우유팩은 종이팩이에요. 비우고 말려서 종이팩 수거함에 버려요." },
+        { "id": "r2_2", "label": "요거트 통", "bucketId": "plastic", "explanation": "요거트 통은 플라스틱 용기예요. 씻어서 플라스틱 통에 버려요." },
+        { "id": "r2_3", "label": "참치캔", "bucketId": "can", "explanation": "참치캔은 금속 캔이에요. 캔류로 분리배출해요." },
+        { "id": "r2_4", "label": "휴지", "bucketId": "general", "explanation": "휴지는 재활용이 안 되므로 일반쓰레기예요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r3_1", "label": "비닐봉지", "bucketId": "plastic", "explanation": "깨끗한 비닐봉지는 비닐·플라스틱으로 분리해 버려요." },
+        { "id": "r3_2", "label": "종이 상자", "bucketId": "paper", "explanation": "종이 상자는 깨끗하면 종이로 재활용돼요." },
+        { "id": "r3_3", "label": "잼 병", "bucketId": "glass", "explanation": "잼 병은 유리예요. 내용물을 비우고 유리 통에 버려요." },
+        { "id": "r3_4", "label": "깨진 유리 조각", "bucketId": "general", "explanation": "깨진 유리는 다칠 수 있으니 종이에 싸서 일반쓰레기로 버려요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r4_1", "label": "스티로폼 상자", "bucketId": "plastic", "explanation": "스티로폼은 플라스틱이에요. 깨끗이 씻어서 플라스틱으로 버려요." },
+        { "id": "r4_2", "label": "잡지", "bucketId": "paper", "explanation": "잡지는 종이예요. 묶어서 종이 통에 버리면 돼요." },
+        { "id": "r4_3", "label": "음식물 묻은 종이컵", "bucketId": "general", "explanation": "음식물이 묻은 종이컵은 재활용이 어렵고 일반쓰레기예요." },
+        { "id": "r4_4", "label": "생수병", "bucketId": "plastic", "explanation": "생수병은 페트병이에요. 플라스틱으로 재활용돼요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r5_1", "label": "기름 묻은 피자 박스", "bucketId": "general", "explanation": "기름이 많이 묻은 종이는 재활용이 어려우므로 일반쓰레기예요." },
+        { "id": "r5_2", "label": "깨끗한 캔", "bucketId": "can", "explanation": "깨끗한 캔은 금속으로 재활용돼요." },
+        { "id": "r5_3", "label": "비닐 포장지", "bucketId": "plastic", "explanation": "깨끗한 비닐은 비닐·플라스틱으로 버려요." },
+        { "id": "r5_4", "label": "박스류 골판지", "bucketId": "paper", "explanation": "골판지는 종이예요. 펼쳐서 종이로 배출해요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r6_1", "label": "깨끗한 유리병", "bucketId": "glass", "explanation": "유리병은 내용물을 비우고 유리 통에 버려요." },
+        { "id": "r6_2", "label": "사용한 휴지", "bucketId": "general", "explanation": "휴지는 재활용이 안 되므로 일반쓰레기예요." },
+        { "id": "r6_3", "label": "플라스틱 용기", "bucketId": "plastic", "explanation": "플라스틱 용기는 씻어서 플라스틱 통에 버려요." },
+        { "id": "r6_4", "label": "신문지", "bucketId": "paper", "explanation": "신문지는 종이예요. 묶어서 종이 통에 버리면 돼요." },
+        { "id": "r6_5", "label": "맥주캔", "bucketId": "can", "explanation": "맥주캔은 금속 캔이에요. 캔류로 분리배출해요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r7_1", "label": "과일 통", "bucketId": "plastic", "explanation": "플라스틱 과일 통은 씻어서 플라스틱으로 버려요." },
+        { "id": "r7_2", "label": "전단지", "bucketId": "paper", "explanation": "전단지는 종이예요. 종이로 분리배출해요." },
+        { "id": "r7_3", "label": "음식물 쓰레기", "bucketId": "general", "explanation": "음식물 쓰레기는 음식물쓰레기나 일반쓰레기로 버려요." },
+        { "id": "r7_4", "label": "유리잔", "bucketId": "glass", "explanation": "유리잔은 유리예요. 유리 통에 버려요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r8_1", "label": "깨진 그릇", "bucketId": "general", "explanation": "깨진 그릇은 다칠 수 있으니 종이에 싸서 일반쓰레기로 버려요." },
+        { "id": "r8_2", "label": "페트병 뚜껑", "bucketId": "plastic", "explanation": "뚜껑은 병과 분리해서 플라스틱으로 버려요." },
+        { "id": "r8_3", "label": "종이팩", "bucketId": "paper", "explanation": "종이팩은 비우고 말려서 종이팩 수거함에 버려요." },
+        { "id": "r8_4", "label": "캔류", "bucketId": "can", "explanation": "캔은 내용물을 비우고 씻어서 캔 통에 버려요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r9_1", "label": "음식물 묻은 비닐", "bucketId": "general", "explanation": "음식물이 묻은 비닐은 재활용이 어려우므로 일반쓰레기예요." },
+        { "id": "r9_2", "label": "깨끗한 종이", "bucketId": "paper", "explanation": "깨끗한 종이는 종이로 재활용돼요." },
+        { "id": "r9_3", "label": "유리병", "bucketId": "glass", "explanation": "유리병은 유리 통에 버려요." },
+        { "id": "r9_4", "label": "플라스틱 빨대", "bucketId": "plastic", "explanation": "플라스틱 빨대는 플라스틱으로 버릴 수 있어요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "r10_1", "label": "부러진 연필", "bucketId": "general", "explanation": "연필은 재활용이 어려우므로 일반쓰레기예요." },
+        { "id": "r10_2", "label": "깨끗한 페트병", "bucketId": "plastic", "explanation": "페트병은 라벨을 떼고 씻어서 플라스틱 통에 버려요." },
+        { "id": "r10_3", "label": "철캔", "bucketId": "can", "explanation": "철캔은 금속이에요. 캔류로 분리배출해요." },
+        { "id": "r10_4", "label": "유리조각", "bucketId": "general", "explanation": "깨진 유리는 종이에 싸서 일반쓰레기로 버려요." },
+        { "id": "r10_5", "label": "골판지 상자", "bucketId": "paper", "explanation": "골판지는 종이예요. 펼쳐서 종이로 배출해요." }
+      ]
+    }
+  ],
+  "dragRecyclableRounds": [
+    {
+      "items": [
+        { "id": "s1_1", "label": "깨끗한 캔", "bucketId": "recycle", "explanation": "깨끗한 캔은 재활용돼요." },
+        { "id": "s1_2", "label": "깨끗한 종이 상자", "bucketId": "recycle", "explanation": "깨끗한 종이 상자는 종이로 재활용돼요." },
+        { "id": "s1_3", "label": "비운 페트병", "bucketId": "recycle", "explanation": "비운 페트병은 플라스틱으로 재활용돼요." },
+        { "id": "s1_4", "label": "사용한 휴지", "bucketId": "general", "explanation": "휴지는 재활용이 안 되므로 일반쓰레기예요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s2_1", "label": "깨끗한 유리병", "bucketId": "recycle", "explanation": "유리병은 유리로 재활용돼요." },
+        { "id": "s2_2", "label": "잡지", "bucketId": "recycle", "explanation": "잡지는 종이로 재활용돼요." },
+        { "id": "s2_3", "label": "기름 묻은 피자 박스", "bucketId": "general", "explanation": "기름이 묻은 종이는 재활용이 어려우므로 일반쓰레기예요." },
+        { "id": "s2_4", "label": "음식물 쓰레기", "bucketId": "general", "explanation": "음식물 쓰레기는 일반쓰레기나 음식물쓰레기로 버려요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s3_1", "label": "신문지", "bucketId": "recycle", "explanation": "신문지는 종이로 재활용돼요." },
+        { "id": "s3_2", "label": "깨진 유리 조각", "bucketId": "general", "explanation": "깨진 유리는 다칠 수 있으니 일반쓰레기로 버려요." },
+        { "id": "s3_3", "label": "플라스틱 용기", "bucketId": "recycle", "explanation": "플라스틱 용기는 재활용돼요." },
+        { "id": "s3_4", "label": "음식물 묻은 비닐", "bucketId": "general", "explanation": "음식물이 묻은 비닐은 일반쓰레기예요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s4_1", "label": "우유팩", "bucketId": "recycle", "explanation": "우유팩은 종이팩으로 재활용돼요." },
+        { "id": "s4_2", "label": "부러진 연필", "bucketId": "general", "explanation": "연필은 일반쓰레기예요." },
+        { "id": "s4_3", "label": "참치캔", "bucketId": "recycle", "explanation": "참치캔은 금속으로 재활용돼요." },
+        { "id": "s4_4", "label": "휴지", "bucketId": "general", "explanation": "휴지는 재활용이 안 되므로 일반쓰레기예요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s5_1", "label": "비닐봉지", "bucketId": "recycle", "explanation": "깨끗한 비닐봉지는 재활용돼요." },
+        { "id": "s5_2", "label": "음식물 묻은 종이컵", "bucketId": "general", "explanation": "음식물이 묻은 종이컵은 일반쓰레기예요." },
+        { "id": "s5_3", "label": "콜라캔", "bucketId": "recycle", "explanation": "콜라캔은 캔류로 재활용돼요." },
+        { "id": "s5_4", "label": "깨진 그릇", "bucketId": "general", "explanation": "깨진 그릇은 일반쓰레기로 버려요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s6_1", "label": "종이 상자", "bucketId": "recycle", "explanation": "깨끗한 종이 상자는 종이로 재활용돼요." },
+        { "id": "s6_2", "label": "스티로폼", "bucketId": "recycle", "explanation": "깨끗한 스티로폼은 플라스틱으로 재활용돼요." },
+        { "id": "s6_3", "label": "사탕 껍질", "bucketId": "general", "explanation": "사탕 껍질은 일반쓰레기예요." },
+        { "id": "s6_4", "label": "잼 병", "bucketId": "recycle", "explanation": "유리병은 유리로 재활용돼요." },
+        { "id": "s6_5", "label": "오염된 플라스틱", "bucketId": "general", "explanation": "음식물이 많이 묻은 플라스틱은 일반쓰레기예요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s7_1", "label": "생수병", "bucketId": "recycle", "explanation": "페트병은 플라스틱으로 재활용돼요." },
+        { "id": "s7_2", "label": "젖은 종이", "bucketId": "general", "explanation": "젖은 종이는 재활용이 어려우므로 일반쓰레기예요." },
+        { "id": "s7_3", "label": "전단지", "bucketId": "recycle", "explanation": "전단지는 종이로 재활용돼요." },
+        { "id": "s7_4", "label": "과일 껍질", "bucketId": "general", "explanation": "과일 껍질은 음식물쓰레기나 일반쓰레기예요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s8_1", "label": "골판지", "bucketId": "recycle", "explanation": "골판지는 종이로 재활용돼요." },
+        { "id": "s8_2", "label": "깨진 유리", "bucketId": "general", "explanation": "깨진 유리는 일반쓰레기로 버려요." },
+        { "id": "s8_3", "label": "요거트 통", "bucketId": "recycle", "explanation": "플라스틱 용기는 재활용돼요." },
+        { "id": "s8_4", "label": "사용한 냅킨", "bucketId": "general", "explanation": "사용한 냅킨은 일반쓰레기예요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s9_1", "label": "깨끗한 비닐", "bucketId": "recycle", "explanation": "깨끗한 비닐은 재활용돼요." },
+        { "id": "s9_2", "label": "맥주캔", "bucketId": "recycle", "explanation": "맥주캔은 캔류로 재활용돼요." },
+        { "id": "s9_3", "label": "기름기 많은 박스", "bucketId": "general", "explanation": "기름이 많이 묻은 종이는 일반쓰레기예요." },
+        { "id": "s9_4", "label": "페트병", "bucketId": "recycle", "explanation": "페트병은 플라스틱으로 재활용돼요." }
+      ]
+    },
+    {
+      "items": [
+        { "id": "s10_1", "label": "유리병", "bucketId": "recycle", "explanation": "유리병은 유리로 재활용돼요." },
+        { "id": "s10_2", "label": "캔", "bucketId": "recycle", "explanation": "캔은 금속으로 재활용돼요." },
+        { "id": "s10_3", "label": "부러진 장난감", "bucketId": "general", "explanation": "부러진 장난감은 일반쓰레기예요." },
+        { "id": "s10_4", "label": "깨끗한 종이", "bucketId": "recycle", "explanation": "깨끗한 종이는 종이로 재활용돼요." },
+        { "id": "s10_5", "label": "음식물이 묻은 플라스틱", "bucketId": "general", "explanation": "음식물이 묻은 플라스틱은 씻어서 버리거나 일반쓰레기예요." }
+      ]
+    }
   ]
 }
-

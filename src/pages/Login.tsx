@@ -18,7 +18,7 @@ export default function Login() {
       return;
     }
     if (login(password)) {
-      navigate('/countries', { replace: true });
+      navigate('/contents', { replace: true });
     } else {
       setError('비밀번호가 맞지 않아요. 다시 입력해 주세요.');
     }
@@ -28,8 +28,8 @@ export default function Login() {
     <div className={styles.wrapper}>
       <div className={styles.card}>
         <div className={styles.logo}>
-          <h1 className={styles.title}>환경 · 세계 나라</h1>
-          <p className={styles.subtitle}>나라별 활동을 풀어 보세요</p>
+          <h1 className={styles.title}>환경과학 VR 체험</h1>
+          <p className={styles.subtitle}>환경·에너지·기후변화 활동을 시작해요</p>
         </div>
         <form onSubmit={handleSubmit} className={styles.form}>
           <label className={styles.label}>비밀번호</label>
