@@ -639,22 +639,66 @@
   gap: var(--space-xs);
 }
 
-.bucketItemBadge {
-  padding: 2px 8px;
+.bucketItemBadgeWrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px 10px 18px;
+  min-height: 44px;
+  min-width: 80px;
   border-radius: 999px;
   background: var(--color-surface);
   font-size: var(--text-xs);
   box-shadow: 0 1px 4px var(--color-shadow);
 }
 
-.bucketItemBadge[data-correct="true"] {
+.bucketItemBadgeWrap[data-correct="true"] {
   background: #e8f5e9;
   color: #2e7d32;
 }
 
-.bucketItemBadge[data-wrong="true"] {
+.bucketItemBadgeWrap[data-wrong="true"] {
   background: #ffebee;
   color: #c62828;
+}
+
+.bucketItemBadge {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1;
+  min-height: 1.2em;
+}
+
+.bucketItemRemoveBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.12);
+  color: var(--color-text);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.bucketItemRemoveIcon {
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin: auto;
+}
+
+.bucketItemRemoveBtn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bucketItemRemoveBtn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
 }
 
 .backToContentBtn {

@@ -1057,6 +1057,10 @@ function DragBucketPlay({
     setDragItem(null);
   }
 
+  function handleRemoveFromBucket(itemId: string) {
+    setAssigned((prev) => ({ ...prev, [itemId]: null }));
+  }
+
   function handleDragOver(e: React.DragEvent<HTMLDivElement>) {
     e.preventDefault();
   }
@@ -1121,11 +1125,23 @@ function DragBucketPlay({
                       return (
                         <div
                           key={item.id}
-                          className={styles.bucketItemBadge}
+                          className={styles.bucketItemBadgeWrap}
                           data-correct={correct || undefined}
                           data-wrong={wrong || undefined}
                         >
-                          {item.label}
+                          <span className={styles.bucketItemBadge}>{item.label}</span>
+                          {!checked && (
+                            <button
+                              type="button"
+                              className={styles.bucketItemRemoveBtn}
+                              onClick={() => handleRemoveFromBucket(item.id)}
+                              aria-label={`${item.label} 되돌리기`}
+                            >
+                              <svg className={styles.bucketItemRemoveIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden>
+                                <path d="M18 6L6 18M6 6l12 12" />
+                              </svg>
+                            </button>
+                          )}
                         </div>
                       );
                     })}
@@ -1208,6 +1224,10 @@ function DragBucketRoundsPlay({
     if (!dragItem) return;
     setAssigned((prev) => ({ ...prev, [dragItem]: bucketId }));
     setDragItem(null);
+  }
+
+  function handleRemoveFromBucket(itemId: string) {
+    setAssigned((prev) => ({ ...prev, [itemId]: null }));
   }
 
   function handleDragOver(e: React.DragEvent<HTMLDivElement>) {
@@ -1296,8 +1316,18 @@ function DragBucketRoundsPlay({
                       {currentRound.items
                         .filter((item) => assigned[item.id] === bucket.id)
                         .map((item) => (
-                          <div key={item.id} className={styles.bucketItemBadge}>
-                            {item.label}
+                          <div key={item.id} className={styles.bucketItemBadgeWrap}>
+                            <span className={styles.bucketItemBadge}>{item.label}</span>
+                            <button
+                              type="button"
+                              className={styles.bucketItemRemoveBtn}
+                              onClick={() => handleRemoveFromBucket(item.id)}
+                              aria-label={`${item.label} 되돌리기`}
+                            >
+                              <svg className={styles.bucketItemRemoveIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden>
+                                <path d="M18 6L6 18M6 6l12 12" />
+                              </svg>
+                            </button>
                           </div>
                         ))}
                     </div>
