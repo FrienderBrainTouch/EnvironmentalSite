@@ -1,4 +1,4 @@
-import type { CountryQuestions, ChoiceQuestion, OxItem } from '../types/data';
+import type { CountryQuestions, ChoiceQuestion } from '../types/data';
 
 /**
  * Fisher-Yates shuffle. Returns a new shuffled array (does not mutate).
@@ -7,7 +7,12 @@ export function shuffle<T>(arr: T[]): T[] {
   const out = [...arr];
   for (let i = out.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
+    const a = out[i];
+    const b = out[j];
+    if (a !== undefined && b !== undefined) {
+      out[i] = b;
+      out[j] = a;
+    }
   }
   return out;
 }
