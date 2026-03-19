@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap');
+
 :root {
-  font-family: 'Jua', sans-serif;
+  font-family: 'Noto Sans KR', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #2d3436;
@@ -54,8 +56,14 @@ body {
   min-height: 100vh;
 }
 
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
 button {
-  font-family: 'Jua', sans-serif;
+  font-family: inherit;
   cursor: pointer;
   border: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
